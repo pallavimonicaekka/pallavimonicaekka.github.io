@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoicGFsbGF2aWVra2EiLCJhIjoiY2o3MDd4ODJvMDVmNjJxbXEyb21wYTBvbiJ9.KWQh1_Yu_Me7etyPuhqhqg';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v9',
+    center: [77.2534726, 28.5889188],
+    zoom: 6
+});
+
+var red = '#000000';
+var blue = '#000000';
+var yellow = '#000000';
+var green = '#000000';
+
+
+
+map.on('load', function() {
+    //route1
+    map.addLayer({
+        'id': 'lines',
+        'type': 'line',
+        
+        'source': {
+            'type': 'geojson',
+            'data': {
+                'type': 'FeatureCollection',
+                'features': [{
+                    'type': 'Feature',
+                    'properties': {
+                        'color': red,
+                    },
+                    'geometry': {
+                        'type': 'LineString',
+                        'coordinates': [
+                            [77.2090212 , 28.6139391],
+                            [77.1587375 , 28.5961279],
+                            [77.083024,28.518060]
+                                                                                
+                        ]
+                    }
+                }]
+            }
+        },
+        // The identity function does not take a 'stops' property.
+        // Instead, the property value (in this case, 'color') on the source will be the direct output.
+        'paint': {
+            'line-width': 33.56,
+            'line-color': {
+                'type': 'identity',
+                'property': 'color'
+            }
+        },
+    });
+    
+    map.addLayer({
+        'id': 'lines2',
+        'type': 'line',
+        
+        'source': {
+            'type': 'geojson',
+            'data': {
+                'type': 'FeatureCollection',
+                'features': [{
+                    'type': 'Feature',
+                    'properties': {
+                        'color': red,
+                    },
+                    'geometry': {
+                        'type': 'LineString',
+                        'coordinates': [
+                            [77.083024,28.518060],
+                            [77.026638,28.459497],
+                            [76.836098,28.225163]
+                                                                                
+                        ]
+                    }
+                }]
+            }
+        },
+        // The identity function does not take a 'stops' property.
+        // Instead, the property value (in this case, 'color') on the source will be the direct output.
+        'paint': {
+            'line-width': 14.26,
+            'line-color': {
+                'type': 'identity',
+                'property': 'color'
+            }
+        },
+    });
+    
+
+    map.addLayer({
+        'id': 'lines3',
+        'type': 'line',
+        
+        'source': {
+            'type': 'geojson',
+            'data': {
+                'type': 'FeatureCollection',
+                'features': [{
+                     'type': 'Feature',
+                    'properties': {
+                        'color': yellow,
+                    },
+                    'geometry': {
+                        'type': 'LineString',
+                        'coordinates': [
+                            [76.836098,28.225163],
+                            [75.7872709 , 26.9124336],
+                            [74.637196,26.457095],
+                            [72.699943,24.405606]                                                    
+                        ]
+                    }
+                }]
+            }
+        },
+        // The identity function does not take a 'stops' property.
+        // Instead, the property value (in this case, 'color') on the source will be the direct output.
+        'paint': {
+            'line-width': 14.03,
+            'line-color': {
+                'type': 'identity',
+                'property': 'color'
+            }
+        },
+    });
+
+    map.addLayer({
+        'id': 'lines4',
+        'type': 'line',
+        
+        'source': {
+            'type': 'geojson',
+            'data': {
+                'type': 'FeatureCollection',
+                'features': [{
+                     'type': 'Feature',
+                    'properties': {
+                        'color': blue,
+                    },
+                     'geometry': {
+                        'type': 'LineString',
+                        'coordinates': [
+                            [72.699943,24.405606],
+                            [72.4307641 , 24.1749018],
+                            [72.3889221 , 23.6024932],
+                            [72.586961  , 23.0715934],
+                            [72.6007657 , 23.0272914]                                                    
+                        ]
+                    }
+                }]
+            }
+        },
+        // The identity function does not take a 'stops' property.
+        // Instead, the property value (in this case, 'color') on the source will be the direct output.
+        'paint': {
+            'line-width': 15.4,
+            'line-color': {
+                'type': 'identity',
+                'property': 'color'
+            }
+        },
+    });
+
+    //route2
+    map.addLayer({
+        'id': 'lines5',
+        'type': 'line',
+        
+        'source': {
+            'type': 'geojson',
+            'data': {
+                'type': 'FeatureCollection',
+                'features': [{
+                    'type': 'Feature',
+                    'properties': {
+                        'color': red,
+                    },
+                    'geometry': {
+                        'type': 'LineString',
+                        'coordinates': [
+                            [77.2534726 , 28.5889188],
+                            [77.2868,28.498568]
+                                                                                
+                        ]
+                    }
+                }]
+            }
+        },
+        // The identity function does not take a 'stops' property.
+        // Instead, the property value (in this case, 'color') on the source will be the direct output.
+        'paint': {
+            'line-width': 33.56,
+            'line-color': {
+                'type': 'identity',
+                'property': 'color'
+            }
+        },
+    });
+
+    map.addLayer({
+        'id': 'lines6',
+        'type': 'line',
+        
+        'source': {
+            'type': 'geojson',
+            'data': {
+                'type': 'FeatureCollection',
+                'features': [{
+                     'type': 'Feature',
+                    'properties': {
+                        'color': green,
+                    },
+                    'geometry': {
+                        'type': 'LineString',
+                        'coordinates': [
+                            [77.2868,28.498568],
+                            [77.501818,27.934630]                                                    
+                        ]
+                    }
+                }]
+            }
+        },
+        // The identity function does not take a 'stops' property.
+        // Instead, the property value (in this case, 'color') on the source will be the direct output.
+        'paint': {
+            'line-width': 14.26,
+            'line-color': {
+                'type': 'identity',
+                'property': 'color'
+            }
+        },
+    });
+
+
+    map.addLayer({
+        'id': 'lines7',
+        'type': 'line',
+        
+        'source': {
+            'type': 'geojson',
+            'data': {
+                'type': 'FeatureCollection',
+                'features': [{
+                     'type': 'Feature',
+                    'properties': {
+                        'color': yellow,
+                    },
+                    'geometry': {
+                        'type': 'LineString',
+                        'coordinates': [
+                            [77.501818,27.934630],
+                            [77.673651,27.479482],
+                            [77.556382,27.335931]                                                    
+                        ]
+                    }
+                }]
+            }
+        },
+        // The identity function does not take a 'stops' property.
+        // Instead, the property value (in this case, 'color') on the source will be the direct output.
+        'paint': {
+            'line-width': 71.68,
+            'line-color': {
+                'type': 'identity',
+                'property': 'color'
+            }
+        },
+    });
+
+    map.addLayer({
+        'id': 'lines8',
+        'type': 'line',
+        
+        'source': {
+            'type': 'geojson',
+            'data': {
+                'type': 'FeatureCollection',
+                'features': [{
+                     'type': 'Feature',
+                    'properties': {
+                        'color': blue,
+                    },
+                     'geometry': {
+                        'type': 'LineString',
+                        'coordinates': [
+                            [77.556382,27.335931],
+                            [75.880788,25.223786],
+                            [75.641905,24.695797]                                               
+                        ]
+                    }
+                }]
+            }
+        },
+        // The identity function does not take a 'stops' property.
+        // Instead, the property value (in this case, 'color') on the source will be the direct output.
+        'paint': {
+            'line-width': 14.03,
+            'line-color': {
+                'type': 'identity',
+                'property': 'color'
+            }
+        },
+    });
+
+map.addLayer({
+        'id': 'linesp',
+        'type': 'line',
+        
+        'source': {
+            'type': 'geojson',
+            'data': {
+                'type': 'FeatureCollection',
+                'features': [{
+                     'type': 'Feature',
+                    'properties': {
+                        'color': blue,
+                    },
+                     'geometry': {
+                        'type': 'LineString',
+                        'coordinates': [                        
+                            [75.641905,24.695797],
+                            [75.050484,23.340558],
+                            [74.375839,22.917864]                                               
+                        ]
+                    }
+                }]
+            }
+        },
+        // The identity function does not take a 'stops' property.
+        // Instead, the property value (in this case, 'color') on the source will be the direct output.
+        'paint': {
+            'line-width': 44.61,
+            'line-color': {
+                'type': 'identity',
+                'property': 'color'
+            }
+        },
+    });
+    map.addLayer({
+        'id': 'lines9',
+        'type': 'line',
+        
+        'source': {
+            'type': 'geojson',
+            'data': {
+                'type': 'FeatureCollection',
+                'features': [{
+                     'type': 'Feature',
+                    'properties': {
+                        'color': blue,
+                    },
+                     'geometry': {
+                        'type': 'LineString',
+                        'coordinates': [
+                            [74.375839,22.917864],                            
+                            [74.2531465,22.8379314],
+                            [73.6061542,22.7767597],
+                            [73.18093,22.3107749],
+                            [72.9663035,22.5617082],
+                            [72.8561568,22.694942],
+                            [72.6007657,23.0272914]                                                    
+                        ]
+                    }
+                }]
+            }
+        },
+        // The identity function does not take a 'stops' property.
+        // Instead, the property value (in this case, 'color') on the source will be the direct output.
+        'paint': {
+            'line-width': 15.4,
+            'line-color': {
+                'type': 'identity',
+                'property': 'color'
+            }
+        },
+    });
+
+//route3
+
+
+});
+
+
+
+</script>
+
+</body>
+</html>

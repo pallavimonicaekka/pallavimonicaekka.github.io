@@ -1,0 +1,48 @@
+body{
+  padding-left: 5%;
+  box-sizing: border-box;
+  background-color: #E7B91B;
+}
+
+div{
+	padding: 2%;
+}
+
+h1 { 
+color: #111; 
+font-family: 'Helvetica Neue', sans-serif; 
+font-size: 75px; font-weight: bold; 
+letter-spacing: -1px; 
+line-height: 1; 
+text-align: center; }
+
+h2 { 
+color: #111; font-family: 'Open Sans', sans-serif; 
+font-size: 16px; font-weight: 300; 
+line-height: 32px; margin: 0 0 72px; 
+text-align: center; }
+
+
+p { 
+color: #685206; 
+font-family: 'Helvetica Neue', sans-serif; 
+font-size: 14px; line-height: 24px; 
+margin: 0 0 24px; text-align: justify; 
+text-justify: inter-word; }
+
+#wrapper {
+    width: 90%;
+    overflow: hidden; /* will contain if #first is longer than #second */
+}
+#first {
+    width: 50%;
+    float:left; /* add this */
+}
+#second {
+    overflow: hidden; /* if you don't want #second to wrap below #first */
+}
+
+a{
+	 color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}

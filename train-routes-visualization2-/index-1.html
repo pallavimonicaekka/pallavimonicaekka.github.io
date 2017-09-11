@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="result">
+      <h2 class="route" >
+
+      </h2>
+    </div>
+ <div style="margin-left: -1000px;">Trains from H Nizamuddin</div>
+        <div class="trains">
+          <button class="train" data-id = "12918">12918</button>
+          <button class="train" data-id = "12066">12066</button>
+          <button class="train" data-id = "12248">12488</button>
+          <button class="train" data-id = "12908">12908</button>
+          <button class="train" data-id = "22692">22692</button>
+          <button class="train" data-id = "12406">12406</button>
+          <button class="train" data-id = "12148">12148</button>
+          <button class="train" data-id = "12270">12270</button>
+          <button class="train" data-id = "12434">12434</button>
+          <button class="train" data-id = "12612">12612</button>
+          <button class="train" data-id = "12648">12648</button>
+          <button class="train" data-id = "12824">12824</button>
+          <button class="train" data-id = "12284">12284</button>
+          <button class="train" data-id = "12618">12618</button>
+          <button class="train" data-id = "12646">12646</button>
+          <button class="train" data-id = "12646">12156</button>
+          <button class="train" data-id = "12722">12722</button>
+          <button class="train" data-id = "12416">12416</button>
+          <button class="train" data-id =  "12122">12416</button>
+          <button class="train" data-id =  "12190">12190</button>
+          <button class="train" data-id =  "22182">22182</button>
+          <button class="train" data-id =  "12280">12280</button>
+          <button class="train" data-id =  "12642">12642</button>
+          <button class="train" data-id =  "12060">12060</button>
+          <button class="train" data-id =  "22110">22110</button>
+          <button class="train" data-id =  "12652">12652</button>
+          <button class="train" data-id =  "12448">12448</button>
+          <button class="train" data-id =  "12954">12954</button>
+          <button class="train" data-id =  "12782">12782</button>
+          <button class="train" data-id =  "12264">12264</button>
+          <button class="train" data-id =  "12410">12410</button>
+          <button class="train" data-id =  "12286">12286</button>
+          <button class="train" data-id =  "12438">12438</button>
+          <button class="train" data-id =  "12708">12708</button>
+          <button class="train" data-id =  "12432">12432</button>
+          <button class="train" data-id =  "12644">12644</button>
+          <button class="train" data-id =  "22634">22634</button>
+          <button class="train" data-id =  "22654">22654</button>
+          <button class="train" data-id =  "22656">66656</button>
+          <button class="train" data-id =  "12963">12963</button>
+          <button class="train" data-id =  "12780">12780</button>
+          <button class="train" data-id =  "12804">12804</button>
+          <button class="train" data-id =  "12808">12808</button>
+          <button class="train" data-id =  "12630">12630</button>
+          <button class="train" data-id =  "12650">12650</button>
+
+        </div>
+
+
+
+  </div>
+
+
+  <script>
+
+  let route = document.querySelector(".route");
+
+    const data = [
+      {
+        trainId: 12918,
+        states: ["Delhi", "UP", "Rajasthan", "MP", "Gujrat"], 
+        crimes: ["10","10","41","392","476","512","610","696","985","1089","1098","1210","1403","1426","1540","1577","1720","2182","3356","4461","7168","7277"]
+
+      },
+      {
+        trainId: 12066,
+        states: ["Delhi", "Haryana", "Rajasthan"]
+      },
+
+      {
+        trainId: 12248,
+        states: ["Delhi", "UP", "Rajasthan", "MP", "Gujrat", "Maharashtra"]
+      },
+
+      {
+        trainId: 12908,
+        states: ["Delhi", "Haryana", "Rajasthan", "Gujrat", "Maharashtra"]
+      },
+
+      {
+        trainId: 12910,
+        states: ["Delhi", "Haryana", "UP", "Rajasthan", "MP", "Gujrat", "Maharashtra"]
+      },
+
+      {
+        trainId: 22692,
+        states: ["Delhi", "Haryana", "UP", "MP" , "Telangana", "Karnataka"]
+      },
+
+      {
+        trainId: 22694,
+        states: ["Delhi", "Haryana", "UP",  "MP" , "Telangana", "Karnataka"]
+      },
+
+      {
+        trainId: 12406,
+        states: ["Delhi", "Haryana", "UP",  "MP" , "Maharashtra"]
+      },
+
+      {
+        trainId: 12148,
+        states: ["Delhi", "Haryana", "UP", "MP", "Maharashtra"]
+      },
+
+      {
+        trainId: 12270,
+        states: ["Delhi", "Haryana", "UP", "MP", "Telangana", "AP", "TN"]
+      },
+
+      {
+        trainId: 12434,
+        states: ["Delhi", "Haryana", "UP", "MP", "Telangana", "AP", "TN"]
+      },
+
+      {
+        trainId: 12612,
+        states: ["Delhi", "Haryana", "UP", "MP", "Telangana", "AP", "TN"]
+      },
+
+      {
+        trainId: 12648,
+        states: ["Delhi", "Haryana", "UP", "MP", "Telangana", "AP", "Karnataka", "TN"]
+      },
+
+      {
+        trainId: 12824,
+        states: ["Delhi", "Haryana", "UP", "MP", "Chattisgarh"]
+      },
+
+      {
+        trainId: 12284,
+        states: ["Delhi", "UP", "Rajasthan" , "MP", "Gujrat", "Maharashtra", "Karnataka", "Kerala"]
+      },
+
+      {
+        trainId: 12618,
+        states: ["Delhi", "Haryana", "UP", "Rajasthan" , "MP", "Maharashtra", "Karnataka", "Kerala"]
+      },
+
+      {
+        trainId: 12646,
+        states: ["Delhi", "Haryana", "UP", "MP", "Maharashtra", "Telangana", "AP", "TN", "Kerala"]
+      },
+
+      {
+        trainId: 12156,
+        states: ["Delhi", "Haryana", "UP", "MP"]
+      },
+
+      {
+        trainId: 12722,
+        states: ["Delhi", "Haryana", "UP", "MP", "Maharashtra" , "Telangana"]
+      },
+
+      {
+        trainId: 12416,
+        states: ["Delhi", "Haryana", "UP", "Rajasthan", "MP"]
+      },
+      {
+        trainId: 12416  ,
+        states:[ "Delhi", "Haryana", "UP",  "Rajasthan", "MP"]
+      },
+      {
+        trainId: 12122  ,
+        states:[ "Delhi", "Haryana", "UP",  "MP"]
+      },
+      {
+        trainId: 12190  ,
+        states:[ "Delhi", "Haryana", "UP",  "MP"]
+      },
+      {
+        trainId: 22182  ,
+        states:[ "Delhi", "Haryana", "UP",  "MP"]
+      },
+      {
+        trainId: 12280  ,
+        states:[ "Delhi", "Haryana", "UP",  "MP"]
+      },
+      {
+        trainId: 12642  ,
+        states:[ "Delhi", "Haryana", "UP",  "MP",   "Maharashtra", "Telangana", "AP",  "TN"]
+      },
+      {
+        trainId: 12060  ,
+        states:[ "Delhi", "Haryana", "UP",  "Rajasthan"]
+      },
+      {
+        trainId: 22110  ,
+        states:[ "Delhi", "Haryana", "UP",  "MP" ,  "Maharashtra"]
+      },
+      {trainId: 12652  ,states:[ "Delhi", "Haryana", "UP",  "MP" ,  "Maharashtra", "Telangana" ,"AP",  "TN"    ]},
+      {trainId: 12448  ,states:[ "Delhi", "Haryana", "UP",  "MP"             ]},
+      {trainId: 12954  ,states:[ "Delhi", "Haryana", "UP",  "Rajasthan", "MP"   ,"Gujrat",  "Maharashtra"]},
+      {trainId: 12782  ,states:[ "Delhi", "Haryana", "UP",  "MP",   "Maharashtra", "Karnataka" ]},
+      {trainId: 12264  ,states:[ "Delhi", "Haryana", "UP",  "Rajasthan", "MP" ,  "Gujrat",  "Maharashtra"]},
+      {trainId: 12410  ,states:[ "Delhi", "Haryana", "UP",  "MP",   "Chhattisgarh"]},
+      {trainId: 12286  ,states:[ "Delhi", "Haryana", "UP",  "MP",   "Maharashtra", "Telangana" ]},
+      {trainId: 12438  ,states:[ "Delhi", "Haryana", "UP",  "MP",   "Maharashtra", "Telangana" ]},
+      {trainId: 12708  ,states:[ "Delhi", "Haryana", "UP",  "MP",   "Maharashtra", "Telangana", "AP"]},
+      {trainId: 12432  ,states:[ "Delhi", "Haryana", "UP",  "Rajasthan", "MP", "Gujrat", "Maharashtra", "Karnataka", "Kerala"  ]},
+      {trainId: 12644  ,states:[ "Delhi", "Haryana", "UP",  "MP",   "Maharashtra", "Telangana", "AP",  "TN",  "Kerala"  ]},
+      {trainId: 22634  ,states:[ "Delhi", "Haryana", "UP",  "Rajasthan", "MP" ,  "Gujrat" , "Maharashtra", "Karnataka", "Kerala"  ]},
+      {trainId: 22654  ,states:[ "Delhi", "Haryana", "UP",  "Rajasthan", "MP" ,  "Gujrat" , "Maharashtra", "Karnataka", "Kerala"  ]},
+      {trainId: 22656  ,states:[ "Delhi", "Haryana", "UP",  "Rajasthan", "MP" ,  "Gujrat" , "Maharashtra", "Karnataka", "Kerala"  ]},
+      {trainId: 12963  ,states:[ "Delhi", "Haryana", "UP",  "Rajasthan"           ]},
+      {trainId: 12780  ,states:[ "Delhi", "Haryana", "UP",  "MP",   "Maharashtra", "Karnataka"       ]},
+      {trainId: 12804  ,states:[ "Delhi", "Haryana", "UP",  "MP",   "Maharashtra", "Telangana", "AP"      ]},
+      {trainId: 12808  ,states:[ "Delhi", "Haryana", "UP",  "MP",   "Maharashtra", "Chhattisgarh",  "Odisha"     ]},
+      {trainId: 12630  ,states:[ "Delhi", "Haryana", "UP",  "MP",   "Maharashtra", "Karnataka"       ]},
+      {trainId: 12650  ,states:[ "Delhi", "Haryana", "UP",  "MP",   "Maharashtra", "Telangana", "AP",  "Karnataka"   ]}
+    ];
+
+
+    const trains = document.querySelectorAll(".train");
+
+
+    function findTrain(){
+      const train = this.dataset.id;
+      showStates(train);
+    }
+
+    function showStates(x){
+        return data.filter(item => {
+            if(x == item.trainId){
+              route.innerHTML =
+              `
+              <div> 
+              <h2 style="font-size: 20px">The train passes through : </h2>
+              <h2>${item.states.map(state => `<li class="${state}" title ="${state}">${state}</li>`)
+                .join('')}</h2>
+              </div>
+              `
+            };
+      });
+    }
+
+
+    trains.forEach(item => item.addEventListener('click', findTrain));
+  </script>
+
+</body>
+
+</html>
