@@ -1,0 +1,303 @@
+/* The template has been created by Pallavi Monica Ekka (pallavimonicaekka.com) */
+
+@@font-face {
+  font-family: Harabara;
+  src: url(Harabara.ttf);
+}
+
+.container {
+  display: grid;
+  grid-template-columns:15% 70% 15%;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "name content sidebar";
+
+}
+
+.name{
+  background: ;
+}
+
+.pallavi{
+    transform: rotate(-90deg);
+    font-family: 'Plaster', cursive;
+    font-size: calc(20px + (50 - 20) * ((100vw - 320px) / (1440 - 320)));
+    position: fixed;
+    top: 40%;
+    left: -15%;
+    font-weight: 900;
+}
+
+.twocolumn{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  column-gap: 5px;
+}
+
+.threecolumn{
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  column-gap: 5px;
+}
+
+.caption{
+  font-size: 12px;
+  font-weight: lighter;
+  font-family: Raleway-Light;
+  font-style: italic;
+  padding-right: 20px;
+}
+
+.workbody1{
+  font-size: 21px;
+  margin-bottom: 30px;
+  font-weight: 100;
+  line-height: 33.18px;
+  font-family: Raleway-Light;
+  font-size: 16px;
+}
+
+.workbody2{
+  font-size: 21px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-family: Raleway-ExtraBold;
+  line-height: 30px;
+}
+
+.containwork{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.content{
+  background: ;
+}
+
+.putincenter{
+  display: flex;
+  flex-direction: column;
+}
+
+.pagetitle{
+  font-family: 'Open Sans', sans-serif;
+  font-size: calc(80px + (80 - 20) * ((100vw - 320px) / (1440 - 320)));
+  font-weight: 700;
+  margin-bottom: 1vw;
+}
+
+.date{
+  margin-bottom: 1%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+}
+
+.datein{
+  margin-bottom: 1%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.gif {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.worktitle{
+  margin-bottom: 2%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 42px;
+}
+
+.worktitlein{
+  margin-bottom: 2%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 42px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.worksummary{
+  margin-bottom: 2%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.sidebar{
+  background: ;
+  font-size:14px;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.workpanel{
+  margin-bottom: 100px;
+}
+
+.links{
+  position: fixed;
+  list-style-type: none;
+  font-family: 'Montserrat', sans-serif;
+  margin-top:
+}
+
+.license{
+  margin-top: 1vw;
+  line-height: normal;
+  font-size: 0.4vw;
+}
+
+.responsive{
+  width: 100%;
+  height: auto;
+}
+
+.swot{
+  margin-top: 50px;
+  width: 100%
+  border-spacing: 15px;
+}
+
+.table{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  column-gap: 10px;
+}
+
+.footer{
+  padding-top: 60px;
+}
+
+p{
+  margin-bottom: 30px;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+}
+
+a{
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #6A6E6C;
+}
+
+a:active {
+  color: #6A6E6C;
+}
+
+.bodylist{
+  line-height:200%;
+  text-align: left;
+}
+
+ul li{
+  line-height:400%;
+   text-transform: uppercase;
+  text-align: left;
+}
+/* =================================
+  Media Queries
+==================================== */
+
+@media (max-width: 1024px) {
+
+  .container {
+    display: grid;
+    grid-template-columns:15% 70% 15%;
+    grid-template-areas:
+    "name content sidebar";
+  }
+
+  .pallavi{
+  top: 30%;
+  }
+
+
+}
+
+@media (max-width: 900px) {
+
+  .pallavi{
+  top: 30%;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .container {
+    grid-template-columns: 1fr;
+      grid-template-rows: 2% 2% 96%;
+      grid-template-areas:
+        "name"
+        "sidebar"
+        "content";
+
+  }
+
+  .pallavi{
+      transform: rotate(0deg);
+      top: 0;
+      left: 2%;
+      position: relative;
+      text-align: center;
+  }
+
+  .content{
+    order: 2;
+  }
+
+  .links{
+    position: relative;
+    list-style-type: none;
+    text-align: center;
+  }
+
+
+  ul li{
+  display: inline;
+  padding-right: 10%;
+  }
+
+  .license{
+    display: none;
+  }
+
+  .putincenter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.sideline{
+  display: none;
+}
+
+
+}
+
+@media (min-width: 800px) {
+
+  .middleline{
+    display: none;
+  }
+
+}

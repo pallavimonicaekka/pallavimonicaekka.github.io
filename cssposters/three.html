@@ -1,0 +1,109 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Inter|Open+Sans|Roboto&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+
+body{
+  background-color: #E1C4B6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.download{
+  font-family: 'Open Sans', sans-serif;
+  font-size: calc(12px + (14 - 12) * ((100vw - 400px) / (1600 - 300)));
+  line-height: calc(20px + (22 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex: 10% 50% 40%;
+  width: calc(280px + (500 - 280) * ((100vw - 400px) / (1600 - 300)));
+  padding: 1%;
+  /*margin-left: calc(50px + (550 - 50) * ((100vw - 400px) / (1600 - 300)));*/
+  /*margin-right: calc(50px + (550 - 50) * ((100vw - 400px) / (1600 - 300)));*/
+  /*border: 1px solid #E5E6EB;*/
+  box-shadow: 10px 10px 20px #d8c1b6;
+  background-color: white;
+}
+
+.graphic{
+  height: calc(350px + (500 - 350) * ((100vw - 400px) / (1600 - 300)));
+  width:100%;
+  display: grid;
+  grid-template-rows: 33.33% 33.33% 33.33%;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  font-family: 'Inter', sans-serif;
+  font-size: calc(32px + (52 - 32) * ((100vw - 400px) / (1600 - 300)));
+  background-image: url("https://images.unsplash.com/photo-1586201324800-f77291da9e82?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  background-position: center;
+  background-attachment: absolute;
+  background-size: 1200px calc((1200/1057)*594px);
+  font-weight: bolder;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  justify-content: flex-start;
+  text-align: right;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+h1{
+  font-family: 'Inter', sans-serif;
+  font-size: calc(20px + (28 - 20) * ((100vw - 400px) / (1600 - 300)));
+  font-weight: bolder;
+}
+
+.bodytext{
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Open Sans', sans-serif;
+  font-size: calc(12px + (14 - 12) * ((100vw - 400px) / (1600 - 300)));
+  margin-left: 10%;
+  margin-right: 2%;
+  margin-top: -0.5%;
+  line-height: calc(20px + (22 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+
+</style>
+
+<body>
+  <p class="download"><a href="https://github.com/pallavimonicaekka/cssposters/tree/master/three" target="_blank">DOWNLOAD SOURCE CODE</a></p>
+  <div class="flex-container">
+    <div class="graphic">
+      <div class="box">B</div>
+      <div class="box">I</div>
+      <div class="box">R</div>
+      <div class="box">-</div>
+      <div class="box">Y</div>
+      <div class="box">A</div>
+      <div class="box">N</div>
+      <div class="box">I</div>
+      <div class="box">-</div>
+    </div>
+    <div class="text">
+      <h1>aaj kal toh bas</h1>
+      <p class="bodytext">sapno mein bas aaj kal do hi cheezein aati hai, ek toh logo k plans cancel krna aur ek bahar k khaane par andha kharch krna.<br>Kaafi din se lazypay ka bill nhi aaya h....</p>
+    </div>
+  </div>
+</body>
+</html>

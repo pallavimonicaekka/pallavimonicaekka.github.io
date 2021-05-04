@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<style>
+
+.flex-super {
+  background-color: #F0F2EC;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+}
+
+.flex-container1{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.one{
+  border-width: 4px;
+  writing-mode: vertical-lr;
+  font-family: 'Roboto Mono';
+  font-size: 20px;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+.two{
+  margin-top: 50px;
+  border-width: 4px;
+  height: 33.33%;
+  font-family: 'Roboto Mono';
+  font-size: 14px;
+  line-height: 35px;
+}
+
+.three{
+  margin-top: 50px;
+  border-width: 4px;
+  height: 33.33%;
+  font-family: 'Roboto Mono';
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.imgopa{
+  opacity: 0.2;
+}
+
+a{
+  text-decoration: none;
+  color: #026AFB;
+}
+
+
+@media (max-width: 1556px) {
+
+  .flex-container1{
+    width: 30%;
+  }
+  .two{
+    height: 20%;
+  }
+}
+
+  @media (max-width: 1200px) {
+
+    .flex-container1{
+      width: 40%;
+    }
+
+}
+
+
+</style>
+
+<body>
+
+  <div class="flex-super">
+      <div class="flex-container1">
+        <img src="image-02.png" style="width:90%">
+        <div class="one">3 APRIL 2020 <a href="https://github.com/pallavimonicaekka/cssposters/tree/master/one" target="_blank">DOWNLOAD SOURCE CODE</a></div>
+      </div>
+      <div class="flex-container1">
+        <div class="two">There’s no point in acting surprised about it. All the planning charts and demolition orders have been on display at your local planning department in Alpha Centauri for 50 of your Earth years, so you’ve had plenty of time to lodge any formal complaint and it’s far too late to start making a fuss about it now. I’m sorry, but if you can’t be bothered to take an interest in local affairs, that’s your own lookout. Energize the demolition beams.<br>
+― Douglas Adams, The Hitchhiker's Guide to the Galaxy</div>
+        <img class="imgopa" src="image-03.png" style="width:100%" opacity: 0.5;>
+        <div class="three">There’s no point!</div>
+      </div>
+  </div>
+
+</body>
+</html>

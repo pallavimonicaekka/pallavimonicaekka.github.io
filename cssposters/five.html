@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+}
+
+.heading{
+    font-family: 'Inconsolata', monospace;
+    font-size: calc(20px + (78 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.body{
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (1600 - 300)));
+    line-height: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)));
+    margin-top: 20px;
+    margin-right: calc(2px + (400 - 2) * ((100vw - 300px) / (1600 - 300)));;
+    margin-bottom: 20px;
+}
+
+.graphic{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.grid-item1{
+  background-color: #DA6AAA;
+  border: 40px solid #F0CE52;
+  text-align: center;
+}
+
+.grid-item2{
+  background-color: #DA6AAA;
+  height: 300px;    
+}
+
+.circle1{
+    width: 50%;
+    height: 50%;
+    background-color: #242267;
+    border-bottom-left-radius: 420px;
+    border-bottom-right-radius: 420px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.grid-item3{
+  background-image: radial-gradient(#E36CAB 20%, transparent 20%);
+  background-position: 0 0, 50px 50px;
+  background-size: 100px 100px;
+}
+
+.grid-item4{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end; 
+  background-color: #DA6AAA;
+  height: 300px;
+}
+
+.circle2{
+    width: 50%;
+    height: 50%;
+    background-color: #242267;
+    border-top-left-radius: 420px;
+    border-top-right-radius: 420px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.grid-item5{
+    background: linear-gradient(to right bottom, #F0CE52 50%, #ffffff 50%);
+}
+
+.grid-item5{
+    display: grid;
+}
+
+.grid-item8{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #DA6AAA
+}
+
+.triangle-down {
+	border-left:60px solid transparent;
+	border-right: 60px solid transparent;
+	border-top: 50px solid #F0CE52;
+    margin: 50px;
+}
+
+.grid-item9{
+    display: flex;
+    flex-direction: column;
+    justify-content:center; 
+    background-color: #242267;
+    align-content: center;
+}
+
+.triangle-left{
+	border-top: 175px solid transparent;
+	border-right: 250px solid #F0CE52;
+	border-bottom: 175px solid transparent;
+}
+
+</style>
+
+<body>
+  <div class="flex-container">
+    <div class="text">
+        <div class="heading">Geometric shape</div>
+        <div class="body">The story of the origin of the word “Geometry” makes up an interesting piece. It comes from a Greek word- ‘Geo’ meaning ‘Earth’ and ‘Metria’ meaning ‘Measure’. So basically it is the measurement of Earth.
+            Greek Mathematician, Euclid did some amazing works in geometry that includes the influential “Elements”, which was part of text books for teaching mathematics until round the early 20th century. Euclid lived around the years of 300BC and because of his contribution, he is known as “Father of Geometry”.
+        </div>
+    </div>
+    <div class="graphic">
+        <div class="grid-item1"></div>
+
+        <div class="grid-item2">
+            <div class="circle1"></div>
+        </div>
+
+        <div class="grid-item3"></div>  
+
+        <div class="grid-item4">
+            <div class="circle2"></div> 
+        </div>
+
+        <div class="grid-item5"></div>
+
+        <div class="grid-item6">
+            <div style="background-color: #242267; height: 33.3%;"></div>
+            <div style="background-color: #ffffff; height: 33.3%;"></div>
+            <div style="background-color: #DA6AAA; height: 33.3%;"></div>
+        </div>  
+
+        <div class="grid-item"></div>
+
+        <div class="grid-item8">
+            <div class="">
+                <div class="triangle-down"></div>
+                <div class="triangle-down"></div>
+                <div class="triangle-down"></div>
+            </div>
+            <div class="">
+                <div class="triangle-down"></div>
+                <div class="triangle-down"></div>
+                <div class="triangle-down"></div>
+            </div>
+        </div>
+
+        
+        <div class="grid-item9">
+            <div class="triangle-left"></div>
+        </div> 
+
+    </div>
+  </div>
+
+</body>
+</html>

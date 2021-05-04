@@ -1,0 +1,145 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Exo:900|Open+Sans&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+
+.flex-container{
+	display: flex;
+	flex-direction: column;
+	/*background-color: yellow;*/
+
+}
+
+.heading{
+	margin: 1vw;
+	font-family: 'Exo', sans-serif;
+	font-size: 42px;
+	/*background-color: blue;*/
+}
+
+.body{
+	display: grid;
+	flex-direction: row;	
+	font-family: 'Open Sans', sans-serif;
+	grid-template-columns: 20% 20% 60%;
+	font-size: 12px;
+	/*background-color: black;*/
+}
+
+.graphics{
+	/*background-color: green;*/
+	clip-path: circle( 16vw at center);
+}
+
+.b1{
+	/*background-color: orange;*/
+	margin: 1vw;
+
+}
+
+.b2{
+	/*background-color: purple;*/
+	text-align: right;
+	margin: 1vw;
+	flex-grow: 4;
+}
+
+.flex-rectangle-div{
+    width: 98%;
+    background: black;
+    height: 1vw;
+    margin: 1vw;
+}
+
+.flex-rectangle-div:before{
+    content: "";
+    display: block;
+}
+
+
+.flex-rectangle-1{
+    width: 98%;
+    background: #110133;
+    height: 10vw;
+    margin: 1vw;
+}
+
+.flex-rectangle-1:before{
+    content: "";
+    display: block;
+}
+
+.flex-rectangle-2{
+    width: 98%;
+    background: #ffdc34;
+    height: 10vw;
+    margin: 1vw;
+}
+
+.flex-rectangle-2:before{
+    content: "";
+    display: block;
+}
+
+.flex-rectangle-3{
+    width: 98%;
+    background: #00918e;
+    height: 10vw;
+    margin: 1vw;
+}
+
+.flex-rectangle-3:before{
+    content: "";
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .body{
+    /*background-color: lightblue;*/
+    display: flex;
+	flex-direction: column;	
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	order: 3;
+	/*background-color: black;*/
+  }
+
+	.b2{
+		/*background-color: purple;*/
+		text-align: left;
+		margin: 1vw;
+	}
+
+  .body{
+  	order: 3;
+  }
+
+}
+
+
+</style>
+
+<body>
+
+	<div class="flex-container">
+		<div class="heading">Bridging the gap
+		</div>
+		<div class="flex-rectangle-div"></div>
+		<div class="body">
+			<div class="b1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+			<div class="b1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+			<div class="b2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+		</div>
+		<div class="graphics">
+			<div class="flex-rectangle-1"></div>
+			<div class="flex-rectangle-2"></div>
+			<div class="flex-rectangle-3"></div>
+		</div>
+	</div>
+
+
+</body>
+</html>
