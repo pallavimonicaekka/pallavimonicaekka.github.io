@@ -16,7 +16,9 @@
     --glow: 0 0 2px rgba(255,255,255,.9), 0 0 8px rgba(170,190,255,.55);
   }
   * { box-sizing: border-box; }
-  html, body { height: 100%; margin: 0; }
+  html, body { min-height: 100%; margin: 0; }
+  body { min-height: 100vh; }
+  .screen { margin: auto; padding: 24px 0; }
   body {
     background: var(--blue);
     color: var(--ink);
@@ -28,8 +30,6 @@
     text-shadow: var(--glow);
     overflow-x: hidden;
     display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 16px;
   }
   /* CRT: scanlines + vignette + faint flicker */
@@ -80,9 +80,14 @@
   li a[aria-selected="true"] .arrow { animation: blink 1s steps(1) infinite; }
   @keyframes blink { 50% { opacity: 0; } }
   li a:focus-visible { outline: .1em solid var(--ink); outline-offset: .15em; }
+  h1.rule { font: inherit; font-size: 1.1em; margin: 0 0 1.1em; }
   .desc {
-    font-size: .72em; opacity: .85; margin: .25em 0 0 1.55em;
+    font-size: .72em; margin: .5em 0 0 1.55em; max-width: 40em;
+    line-height: 1.25;
   }
+  .desc p { margin: 0 0 .9em; opacity: .9; }
+  .desc .note { font-weight: bold; opacity: 1; font-size: 1.1em; margin-bottom: 0; }
+  .heart { font-family: system-ui, sans-serif; font-size: .85em; }
 
   footer {
     display: grid; grid-template-columns: 1fr auto; gap: 0 1em;
@@ -105,16 +110,18 @@
 </head>
 <body>
   <main class="screen">
-    <div class="rule">MENU</div>
-
-    <h1>Works of Pallavi Monica Ekka</h1>
+    <h1 class="rule">Works of Pallavi Monica Ekka</h1>
 
     <ul role="listbox" aria-label="Works">
       <li>
         <a href="https://github.com/pallavimonicaekka/sift" role="option" aria-selected="true">
           <span class="arrow">&#x27A4;</span><span>Sift</span>
         </a>
-        <p class="desc">A calm number-sorting game beside Claude Code</p>
+        <div class="desc">
+          <p>You know, I know, we know we loooove AI. You don’t need to do anything now. We don’t even need to know English. A few words and it gets us like even my mom didn’t <span class="heart">&#x2665;</span>. But it thinks a lot, mulls often, and I just sit there waiting for it to talk back. Sometimes I sit there waiting for minutes together.</p>
+          <p>But not anymore. While my trusted AI is going through all my data, on my system and online, I can sift through the numbers and put them in bins. Sift is a lifesaver.</p>
+          <p class="note">&#x25B6; Works on terminal and desktop app</p>
+        </div>
       </li>
     </ul>
 
@@ -124,10 +131,9 @@
       <div class="keys">
         <span>Select</span><span>:&#x25B2;&#x25BC; Key</span>
         <span>Set</span><span>:&#x27A4; Key</span>
-        <span>End</span><span>:Action Key</span>
       </div>
       <div class="status">
-        <div class="mode"><span class="rec">&#x25B6; Play</span><span>SP</span></div>
+        <div class="mode"><span>SP</span></div>
         <div id="counter">0:00:00</div>
       </div>
     </footer>
